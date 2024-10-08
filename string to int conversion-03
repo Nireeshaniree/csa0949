@@ -1,0 +1,16 @@
+
+import java.util.Scanner;
+public class Main{
+    public static void main(String[] args){
+        Scanner sc=new Scanner(System.in);
+        System.out.println("enter the string");
+        String string=sc.nextLine();
+        int n=Integer.parseInt(string);
+        System.out.println(n);
+    }
+}
+
+OUTPUT:
+enter the string
+1234
+1234
