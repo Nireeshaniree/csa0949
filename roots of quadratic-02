@@ -1,0 +1,30 @@
+import java.util.Scanner;
+public class Main{
+    public static void main(String[] args){
+        Scanner scanner=new Scanner(System.in);
+        System.out.println("enter the a number:");
+        int a=scanner.nextInt();
+        System.out.println("enter the b number:");
+        int b=scanner.nextInt();
+        System.out.println("enter the c number:");
+        int c=scanner.nextInt();
+        double quadratic=Math.sqrt(b*b-4*a*c);
+        double possibility1=(-b-quadratic)/(2*a);
+         double possibility2=(-b+quadratic)/(2*a);
+         System.out.println("equation 1="+possibility1);
+         System.out.println("equation2="+possibility2);
+    }
+}
+
+OUTPUT:
+java -cp /tmp/jXgLIuRaT6/Main
+enter the a number:
+2
+enter the b number:
+4
+enter the c number:
+2
+equation 1=-1.0
+equation2=-1.0
+
+=== Code Execution Successful ===
