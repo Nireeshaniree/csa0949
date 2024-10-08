@@ -1,0 +1,42 @@
+import java.util.Scanner;
+public class Main{
+    public static boolean isvalidusername(String username){
+        if(username.length()<5 || username.length()>15)
+        {
+            return false;
+        }
+        if(!username.matches("[a-zA-Z0-9_]+"))
+        {
+            return false;
+        }
+        if(!username.matches("^[a-zA-Z0-9].*")){
+            
+            return false;
+        }
+        if(username.contains("_"))
+        {
+            return false;
+        }
+        return true;
+    }
+    public static void main(String[] args){
+        Scanner sc=new Scanner(System.in);
+        System.out.println("enter the username:");
+        String username=sc.nextLine();
+        if(isvalidusername(username))
+        {
+            System.out.println("valid username");
+        }
+        else
+        {
+            System.out.println("invalid username");
+        }
+        sc.close();
+    }
+    
+}
+
+  OUTPUT:
+  enter the username:
+saveetha123
+valid username
