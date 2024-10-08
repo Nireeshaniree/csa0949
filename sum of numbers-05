@@ -1,0 +1,21 @@
+import java.util.Scanner;
+public class Main{
+    public static void main(String[] args){
+        Scanner scanner=new Scanner(System.in);
+        System.out.println("enter the number:");
+        int n=scanner.nextInt();
+        int sum=0,rem;
+        while(n!=0)
+        {
+            rem=n%10;
+            sum=sum+rem;
+            n=n/10;
+        }
+        System.out.println("sum of numbers="+sum);
+    }
+}
+
+OUTPUT:
+enter the number:
+123
+sum of numbers=6
