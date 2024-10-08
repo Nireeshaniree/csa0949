@@ -1,0 +1,17 @@
+import java.util.Scanner;
+public class Factorial{
+    public static void main(String[]args){
+        Scanner scanner=new Scanner(System.in);
+        System.out.print("enter a non negative integer:");
+        int n=scanner.nextInt();
+        long factorial=1;
+        for(int i=2;i<=n;i++){
+            factorial*=i;
+        }
+        System.out.println("Factorial of"+n+"is:"+factorial);
+        scanner.close();
+    }
+}
+output:
+enter a non negative integer:5
+Factorial of5is:120
