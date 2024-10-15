@@ -1,0 +1,26 @@
+import java.util.Scanner;
+public class vote{
+    public static void main(String[] args){
+        Scanner sc=new Scanner(System.in);
+        System.out.println("enter the age:");
+        int age=sc.nextInt();
+        int diff;
+        if(age>18)
+        {
+            System.out.println("eligible to vote");
+        }
+        else
+        {
+            System.out.println("not eligible to vote");
+            diff=age-18;
+            System.out.println("difference="+diff);
+        }
+        sc.close();
+    }
+}
+
+OUTPUT:
+enter the age:
+12
+not eligible to vote
+difference=-6
